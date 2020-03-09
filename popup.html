@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Facebook擴充元件</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="extension.css">
+</head>
+
+<body>
+    <header class="header d-flex justify-content-center align-items-end">
+        <img src="header.png"></div>   
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr class="style-one" />
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">輸入Facebook個人介紹連結(可多個),並以逗號隔開 : </label>
+                        <input class="form-control" id="inputArea" placeholder="facebook.com/profile.ph.?id=example">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>結果:</p>
+                <!-- <form>
+                    <label for="textArea">輸出結果 : </label>
+                    <br>
+                    <textarea class="form-control" id="textArea" rows="5" wrap="Physical"></textarea>
+                </form> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <table class="table table-responsive" id="table">
+                    <thead>
+                      <tr>
+                        <th data-field="id">ID</th>
+                        <th data-field="link">link</th>
+                        <th data-field="progress">progress</th>
+                      </tr>
+                    </thead>
+                
+                
+                  </table>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <button class="button" id="button"><span class="fui-search"></span> 送出連結</button>                
+            </div>
+            <div class="col"></div>
+            <div class="col">
+                <button class="button" id="downloadButton"><span class="fui-clip"></span> 下載結果</button>                
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="popup.js" ></script>
+</body>
+</html>
